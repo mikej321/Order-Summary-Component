@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 1.8rem;
+  background-color: var(--pale-blue)
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  
+  border-radius: 24px;
+  max-width: 375px;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem auto;
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.card-image {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  max-width: 375px;
+}
+
+.summary {
+  margin-top: 4rem;
+  margin-bottom: 1.3rem;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.description {
+  letter-spacing: 0.1rem;
+  line-height: 2.3rem;
+  width: 80%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+  margin-bottom: 1.5rem;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  padding: 2.4rem;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.container-2>img {
+  position: relative;
+  left: 2.4rem;
+}
+
+.plan-price {
+  line-height: 0.7rem;
+  font-size: 1.5rem;
+  margin-right: 1.4rem;
+}
+
+.plan-price > p:first-of-type {
+  font-weight: 900;
+}
+
+.plan-price > p:last-of-type {
+  color: var(--dark-blue);
+}
+
+.container-2>a {
+  font-size: 1.3rem;
+  font-weight: 900;
+  position: relative;
+  right: 1rem;
+}
+
+a:hover {
+  color: var(--desaturated-blue);
+}
+
+
+.container-2 > img {
+  max-width: 45px;
+}
+
+button {
+  width: 85%;
+  height: 5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  background-color: var(--bright-blue);
+  border: none;
+  cursor: pointer;
+}
+
+button:first-of-type {
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+button:first-of-type:hover {
+  background-color: var(--desaturated-blue);
+}
+
+button:last-of-type {
+  margin-bottom: 3rem;
+  background-color: white;
+  color: var(--desaturated-blue);
+}
+
+button:last-of-type:hover {
+  color: black;
+}
+
+@media (min-width: 600px) {
+
+
+
+  .description {
+    font-size: 1.3rem;
+  }
+
+  .container-2 > img {
+    position: relative;
+    left: 1rem;
+  }
+
+  .plan-price {
+    position: relative;
+    right: 1.4rem;
+    font-size: 1.4rem;
+  }
+
+  a {
+    position: relative;
+    left: 0.2rem;
+  }
+}
